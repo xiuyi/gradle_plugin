@@ -1,0 +1,30 @@
+
+buildscript {
+    repositories {
+        maven {url "https://raw.githubusercontent.com/xiuyi/gradle_plugin/master"}
+    }
+    dependencies {
+        classpath 'com.chen.plugin:gradle:1.0'
+    }
+}
+
+apply plugin: 'gradle-plugin'
+
+apply plugin: 'java'
+apply plugin: 'groovy'
+apply plugin: 'maven'
+dependencies {
+    compile gradleApi()
+    compile localGroovy()
+}
+//设置maven deployer
+uploadArchives {
+    repositories.mavenDeployer {
+        repository(url: "file:///Users/chen/Storage/Project/Github/gradle_plugin")
+        pom.project {
+            groupId 'com.chen.plugin'
+            artifactId 'gradle'
+            version 1.0
+        }
+    }
+}
