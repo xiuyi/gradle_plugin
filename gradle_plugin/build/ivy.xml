@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-  <info organisation="" module="gradle_plugin" revision="unspecified" status="integration" default="true" publication="20181016170705"/>
+  <info organisation="" module="gradle_plugin" revision="unspecified" status="integration" default="true" publication="20181016172425"/>
   <configurations>
     <conf name="apiElements" visibility="private" extends="runtime"/>
     <conf name="archives" visibility="public"/>

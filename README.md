@@ -15,7 +15,7 @@ buildscript {
     apply plugin: 'gradle-plugin'
 
 ## 修改方法
-    项目源码位于gradle_plugin目录下，修改src.main.groovy.com.chen.gradle.MyPlugin类<br/>
-    如果修改了类名则需要修改<br/>
+    项目源码位于gradle_plugin目录下，修改src.main.groovy.com.chen.gradle.MyPlugin类<br>
+    如果修改了类名则需要修改<br>
     src.main.resourecs.META-INF.gradle-plugins.gradle-plugin.properties文件的implementation-class引用
 
